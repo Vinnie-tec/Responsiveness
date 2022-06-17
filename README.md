@@ -2,4 +2,4 @@
 
 ## Responsiveness and Media Queries
 
-![Desktop View](./IMG/desktop.png)
+![Desktop View](./IMG/desktop.jpeg)
