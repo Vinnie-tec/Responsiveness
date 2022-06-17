@@ -1,0 +1,183 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: no-repeat url("./IMG/bg-intro-desktop.png") center, hsl(0, 100%, 74%) 50%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 10%;
+}
+
+.mainInfo {
+  width: 17rem;
+}
+
+.mainInfo h2 {
+  font-size: 1.5rem;
+  color: #fff; 
+}
+
+.mainInfo p {
+  font-size: .5rem;
+  color: #fff;
+  margin-top: 1.2rem;
+}
+
+.mainForm {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mainForm button {
+  background-color: hsl(248, 32%, 49%);
+  padding: .7rem;
+  border-radius: .3rem;
+  margin-bottom: 1.2rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: .5rem;
+}
+
+.mainForm button span {
+  opacity: .8;
+  letter-spacing: .06rem;
+}
+
+.mainForm .form {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: .3rem;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form form input {
+  border: 1px solid hsla(0, 0%, 0%, .2);
+  margin-bottom: 1rem;
+  outline: none;
+  padding: .5rem;
+  width: 100%;
+ 
+}
+
+.form form input:focus {
+  border: 1px solid hsla(0, 0%, 0%, .8);
+  background-color: hsla(0, 0%, 0%, .1);
+}
+
+.form form p {
+  position: relative;
+  top: -2.5rem;
+  right: .5rem;
+  float: right;
+  font-size: .7rem !important;
+  padding: .1rem;
+  width: 1rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color:hsl(0, 100%, 74%);
+  color: #fff;
+  font-weight: 900;
+  opacity: 0;
+}
+
+
+.mainForm .form button {
+  background-color: hsl(154, 59%, 51%);
+  margin: 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .6rem;
+  cursor: pointer;
+}
+
+.error {
+  color: hsl(0, 100%, 74%);
+  float: right;
+  font-size: .7rem;
+  margin: -1rem;
+}
+
+.mainForm .form button:hover {
+  opacity: .8;
+}
+
+.mainForm .p {
+  display: flex;
+  flex-direction: row;
+  font-size: .5rem;
+  align-self: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.mainForm p span {
+  color: #f00;
+}
+
+
+
+@media (max-width: 600px) {
+  main {
+    gap: 5%;
+    flex-direction: column;
+  }
+
+  .mainInfo {
+    width: 25rem;
+  }
+
+  .mainInfo p {
+    font-size: .6rem;
+  }
+  
+  .mainForm {
+    margin-top: 2rem;
+    width: 25rem;
+  }
+
+  p {
+    font-size: .7rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .main {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mainInfo {
+    width: 18rem;
+  }
+  
+  .mainForm {
+    margin-top: 2rem;
+    width: 18rem;
+  }
+
+  .mainForm p {
+    font-size: .5rem;
+    opacity: .7;
+  }
+}

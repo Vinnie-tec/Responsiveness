@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Responsiveness and Media Queries</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="mainInfo">
+        <h2>Learn to code by watching others</h2>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developer think is
+          invaluable.
+        </p>
+      </div>
+      <div class="mainForm">
+        <button>Try it free 7 days <span>then 20$/mo.thereafter</span></button>
+        <div class="form">
+          <form id="form" onsubmit="return validate()">
+            <div>
+              <input type="text" name="Name" placeholder="First Name" id="Name" />
+              <p class="failure-icon">!</p>
+              <div class="error"></div>
+            </div>
+            <div>
+              <input type="text" name="Name" placeholder="Last Name" id="name"/>
+              <p class="failure-icon">!</p>
+              <div class="error"></div>
+            </div>
+            <div>
+              <input type="text" name="email" placeholder="Email Address" id="email"/>
+              <p class="failure-icon">!</p>
+              <div class="error"></div>
+            </div>
+            <div>
+              <input type="password" name="Password" placeholder="Password" id="password"/>
+              <p class="failure-icon">!</p>
+              <div class="error"></div>
+            </div>
+            <button type="submit">Claim your free trial</button>
+          </form>
+          <div class="p">
+            <p>
+              By clicking the button, you are agreeing to our
+              <span> Terms and Services</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
